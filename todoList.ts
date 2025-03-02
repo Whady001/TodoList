@@ -95,32 +95,32 @@ class TodoList implements ITodoItem {
     }
 }
 
-// Example usage
+//Example usage
 const todoList = new TodoList();
 
-// Adding todo items
+//Adding todo items
 todoList.addToDo("Learn TypeScript", new Date("2023-12-31"));
 todoList.addToDo("Build a Todo App");
 todoList.addToDo("Write Documentation", new Date("2023-11-30"));
 
-// Listing all todos
+//Listing all todos
 console.log("All Todos:");
 console.log(todoList.listToDos());
 
-// Completing a todo item
+//Completing a todo item
 todoList.completeToDo(1); // Mark the first task as complete
 
-// Listing completed todos
+//Listing completed todos
 console.log("Completed Todos:");
 todoList.filterTodo(true);
 
-// Updating a task
+//Updating a task
 todoList.updateTaskTodo(2, "Build a Complete Todo App", new Date("2024-01-15"));
 
-// Removing a todo item
+//Removing a todo item
 todoList.removeToDo(3); // Remove the todo item with ID 3
 
-// Listing remaining todos
+//Listing remaining todos
 console.log("Remaining Todos:");
 console.log(todoList.listToDos());
 
